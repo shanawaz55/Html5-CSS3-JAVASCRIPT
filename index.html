@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FARID RAZA</title>
+	<link rel="stylesheet" href="style.css">
+	<!--using FontAwesome-->
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!--main---------------->
+	<div class="main-page">
+  <!--naviagtion------------>
+	<div class="navigation-contaiiner">
+	<!--logo--->
+	<a href="#" class="logo">G T <font color="#led7f4"> INTERNET</font></a>
+	<!--menu------->
+    <div class="menu">
+    <ul>
+    <li><a href="#">Product</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Technology</a></li>
+    </ul>
+
+    </div>
+    <!---cart--->
+    <a href="#" class="cart"><img src="images/cart.png"></a>
+
+  </div>
+ <!--text----->
+<div class="text-container">
+	
+    <p>G T<font color="#led7f4"></font> INTERNET</p>
+    <p>Awesome Website Desing Using HTML and CSS</p>
+    <p>Half Blood Prince, Devolper</p>
+
+</div>
+<!---prouduct-img----->
+<!--1--------------->
+   <div class="product-img img1">
+   	<img src="images/product-2.png">
+ 
+</div>
+<!--2--------------->
+   <div class="product-img img2 active-product">
+   	<img src="images/product-1.png">
+ 
+</div>
+<!--3--------------->
+   <div class="product-img img1">
+   	<img src="images/product-3.png">
+ 
+</div>
+<!--4--------------->
+   <div class="product-img img1">
+   	<img src="images/product-4.png">
+ 
+</div>
+ 
+<!--order-now-tools--------->
+	<div class="tools">
+<!--order-now-------->
+    <div class="order-now">
+    <a href="#">Order Now</a>
+    </div>
+<!--prescription------->
+    <div class="prescription">
+    <a href="#">Prescription</a>
+    </div>
+<!--more-details-------->
+      <div class="More-details">
+    <a href="#">More-details</a>
+       </div>
+  </div>
+</div>
+<!--product-container-------->
+<div class="product-container">
+<div class="product-list">
+<!--box-1--------------->
+<div class="box-1">
+	<!--heading-->
+<p class="heading">Product-1</p>
+<!--icon-->
+<div class="p-icon">
+<i class="fas fa-headphones-alt"></i>
+</div>
+<!--type-->
+<p class="type">Wiraless<br>Headphone</p>
+</div>
+<!--box-2------------>
+<div class="box-2 active">
+  <!--heading-->
+<p class="heading">Product-2</p>
+<!--icon-->
+<div class="p-icon">
+<i class="fas fa-shoe-prints"></i>
+</div>
+<!--type-->
+<p class="type">Nike<br>Sport Shoes</p>
+</div>
+<!--box-3--------------->
+<div class="box-3">
+		<!--heading-->
+<p class="heading">Product-3</p>
+<!--icon-->
+<div class="p-icon">
+<i class="fas fa-clock"></i>
+</div>
+<!--type-->
+<p class="type">Time<br>CLock</p>
+</div>
+<!--box-4--------------->
+<div class="box-4">
+		<!--heading-->
+<p class="heading">Product-4</p>
+<!--icon-->
+<div class="p-icon">
+<i class="fas fa-camera"></i>
+</div>
+<!--type-->
+<p class="type">Canon<br>Camera</p>
+</div>
+
+
+
+</div>
+
+</div>
+<!--using Jquery-->
+<script src="js/https://drive.google.com/file/d/1ulZHce3yXe35OY9pEhsUdIOIGYDU6yny/view" type="text/javascript"></script>
+<!--script--->
+<script type="text/javascript">
+	/*active-box*/
+	$(document).on('click','box-1,.box-2,.box-3,.box-4',function(){(
+     $(this).addClass('active').siblings().removeClass('active')
+		)};
+	/*product img active*/
+	$(document).on('click','box-2',function(){(
+     $('.img-2').addClass('active-product').siblings('.img-2,.img-3,.img-4').removeClass('active-product')
+		)};
+
+	(document).on('click','box-3',function(){(
+     $('.img-3').addClass('active-product').siblings('.img-2,.img-3,.img-4').removeClass('active-product')
+		)};
+
+	(document).on('click','box-4',function(){(
+     $('.img-4').addClass('active-product').siblings('.img-2,.img-3,.img-1').removeClass('active-product')
+		)};
+
+	
+	
+</script>
+</body>
+</html>
